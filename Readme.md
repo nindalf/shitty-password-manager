@@ -19,17 +19,17 @@ And then there are the truly great schemes such as:
 * Shitty Password Manager, packed with features like
   - Stores your password in an encrypted file. Backup the file to the cloud/external drive
   - No fancy GUIs (which are a fad anyway). Accessing your passwords via the terminal increases happiness, well-being and chance of rain.
-  - Installation takes 10 seconds (adding one line to your `.bash_profile` file)
 
 ---
 
 ###Installing SPM
 
-* Download the `.sh` relevant to your platform and copy it to a convenient location (like `~/`)
-* Add a line to your `.bash_profile` - `source spm-osx.sh`
-* Write your passwords down in a text (say `passwords.txt`) file. One login per line with the password at the end. Encrypt with `$ openssl aes-256-cbc -in passwords.txt -out cipher` and delete `passwords.txt`.
-* Set the location of `cipher` in `spm-osx.sh`
+0) `$ brew install moreutils` (for the `vipe` command)
+1) Download the `.sh` relevant to your platform and copy it to a convenient location (like `~/`)
+2) Add a line to your `.bash_profile` - `source spm-osx.sh`
+3) (Optional) Customize `spm-osx.sh` by changing the encrypted file location or whether spm should clear the clipboard.
+4) Open a new terminal and invoke `$ passedit`. Enter one login per line with the password at the end.
 
 ###Using SPM
 
-* `$ pass gmail` and enter your master password. That's it.
+* `$ pass gmail` and enter your master password. That's it, your password will be copied to your clipboard.
