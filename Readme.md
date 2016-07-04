@@ -24,11 +24,11 @@ And then there are the truly great schemes such as:
 
 ###Installing SPM
 
-0) `$ brew install moreutils` (for the `vipe` command)
-1) Download the `.sh` relevant to your platform and copy it to a convenient location (like `~/`)
-2) Add a line to your `.bash_profile` - `source spm-osx.sh`
-3) (Optional) Customize `spm-osx.sh` by changing the encrypted file location or whether spm should clear the clipboard.
-4) Open a new terminal and invoke `$ passedit`. Enter one login per line with the password at the end.
+1. `$ brew install moreutils` (for the `vipe` command)
+2. Download the `.sh` relevant to your platform and copy it to a convenient location (like `~/`)
+3. Add a line to your `.bash_profile` - `source spm-osx.sh`
+4. (Optional) Customize `spm-osx.sh` by changing the encrypted file location or whether spm should clear the clipboard.
+5. Open a new terminal and invoke `$ passedit`. Enter one login per line with the password at the end.
 
 ###Using SPM
 
